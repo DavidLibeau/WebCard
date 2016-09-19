@@ -1,0 +1,316 @@
+/*
+Color
+Bleu foncé  #0c4873
+Rouge       #ca1714
+Bleu David  #0070c0
+*/
+
+*, *:before, *:after {
+    box-sizing: initial;
+}
+
+.mdi:before, .mdi-set {
+    font-size: 1.2em;
+    position: relative;
+    top: 0.1em;
+}
+
+.material-tooltip{
+    min-height: 0!important;
+}
+.chip{
+    font-size: 15px;
+}
+
+
+.z-depth-1-hover,.z-depth-2-hover,.z-depth-3-hover,.z-depth-4-hover,.z-depth-5-hover{
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.z-depth-1-hover:hover{
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+.z-depth-2-hover:hover{
+    box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    /*transform : translateY(-2px);*/
+}
+.z-depth-3-hover:hover{
+    box-shadow: 0 12px 15px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    /*transform : translateY(-5px);*/
+}
+.z-depth-4-hover:hover{
+    box-shadow: 0 16px 28px 0 rgba(0,0,0,0.22),0 25px 55px 0 rgba(0,0,0,0.21);
+    /*transform : translateY(-10px);*/
+}
+.z-depth-5-hover:hover{
+    box-shadow: 0 27px 24px 0 rgba(0,0,0,0.2),0 40px 77px 0 rgba(0,0,0,0.22);
+    /*transform : translateY(-15px);*/
+}
+
+
+/************************************/
+
+
+html,body{
+    margin: 0;
+    overflow-x: hidden;
+}
+body{
+    font-family: sans-serif;
+    background: #E8E8E8;
+    padding-bottom: 40px;
+}
+
+header{
+    background: white;
+}
+header .container{
+    padding: 20px 0;
+}
+header h1{
+    height: 50px!important;
+    margin: 0;
+    text-align: right;
+    font-size: initial;
+    color: #0070c0;
+}
+header h1>img{
+    height: inherit;
+    pointer-events: none
+}
+header nav{
+    position: relative;
+    display: inline-block;
+    width: auto;
+    height: 50px;
+    flex-grow: 1;
+    margin-left: 40px;
+    vertical-align: top;
+    border-radius: 10px;
+    font-size: initial;
+    background: #E8E8E8;
+    box-shadow: none;
+    white-space: nowrap;
+}
+header nav:before {
+    content:"";
+    position: absolute;
+    right: 100%;
+    top: 15px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-right: 15px solid #E8E8E8;
+    border-bottom: 10px solid transparent;
+}
+header nav a {
+    display: inline-block;
+    position: relative;
+    top: -7px;
+    margin: 1px 0;
+    margin-left: 20px;
+    height: 48px;
+    line-height: 48px;
+}
+header nav a:last-child{
+    margin-right: 10px;
+}
+header nav .mdi{
+    position: relative;
+    display: inline-block;
+    height: inherit;
+    line-height: inherit;
+    font-size: 1.5em;  
+    color: rgba(0,0,0,0.7)!important;
+    border-bottom: 2px solid rgba(0,0,0,0);
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    overflow: visible;
+}
+header nav .mdi .waves-ripple{
+    top: 50%!important;
+    left: 50%!important;
+}
+header nav .mdi:hover{
+        color: rgba(0,0,0,0.87)!important;
+}
+@media only screen and (max-width: 800px){
+    header .container{
+        display: block;
+        white-space: nowrap;
+        padding: 20px;
+        overflow-y: auto;
+        width: 100%!important;
+        box-sizing: border-box;
+    }
+    header h1{
+        min-width: 0!important;
+        width: auto!important;
+    }
+    header nav{
+        margin-left: 20px;
+    }
+    header nav a{
+        margin-left: 10px;
+    }
+}
+
+
+main,.container{
+    display: flex;
+    position: relative;
+    flex-wrap: nowrap;
+    max-width: 1280px;
+    width:  90%;
+    margin: 0 auto;
+}
+
+main {
+    min-height: 80vh;
+    margin-top: 40px;
+    font-size: 0;
+}
+
+#leftpanel,header h1{
+    display: inline-block;
+    width: 30%;
+    min-width: 300px;
+    height: 100%;
+    vertical-align: top;
+    font-size: initial;
+}
+#card{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    border-radius: 10px;
+    font-size: 0;
+    overflow: hidden;
+}
+#card>img{
+    width: 100%;
+    pointer-events: none
+}
+
+#tags{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    line-height: 40px;
+    /*text-align: center;*/
+}
+#tags .chip{
+    background: white;
+}
+
+#options{
+    padding: 0 2px;
+    margin: 0;
+}
+#options>li{
+    position: relative;
+    border-top: 1px solid rgba(0,0,0,0.05);
+    font-size: 1.3em;
+    vertical-align: middle;
+    z-index: 5;
+}
+#options>li i{
+    position: relative;
+    top: 4px;
+}
+#options>li>a{
+    position: relative;
+    display: block;
+    padding: 10px 0;
+    padding-left: 20px;
+    color: rgba(0,0,0,0.4);
+    z-index: 9;
+}
+#options>li>a:hover{
+    color: rgba(0,0,0,1);
+}
+#options>li:nth-child(1){
+    z-index: 19;
+}
+#options>li:nth-child(2){
+    z-index: 18;
+}
+#options>li:nth-child(3){
+    z-index: 17;
+}
+#options>li:nth-child(4){
+    z-index: 16;
+}
+#options>li:nth-child(5){
+    z-index: 15;
+}
+
+
+#rightpanel{
+    position: relative;
+    display: inline-block;
+    flex-grow: 1;
+    padding-left: 40px;
+    vertical-align: top;
+    font-size: initial;
+}
+#rightpanel>div {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 40px;
+    background: white;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+#rightpanel>div:before {
+    content:"";
+    position: absolute;
+    right: 100%;
+    top: 25px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-right: 15px solid white;
+    border-bottom: 10px solid transparent;
+}
+@media only screen and (max-width: 800px){
+    #rightpanel{
+        display: none;
+    }
+}
+
+main .fixed-action-btn{
+    position: absolute;
+    right: -26px;
+}
+main .fixed-action-btn .btn-floating{
+    box-shadow: none;
+}
+main .fixed-action-btn .btn-floating:hover,main .fixed-action-btn:hover>.btn-floating{
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+main .fixed-action-btn .mdi{
+    font-size: initial;
+}
+main .btn-floating{
+    background: #0070c0;
+}
+main .btn-floating:hover{
+    background: #0c4873;
+}
+@media only screen and (max-width: 800px){
+    main .fixed-action-btn{
+        position: fixed;
+        right: 10px;
+        bottom: 50px;
+    }
+}

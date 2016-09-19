@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <title>WebCard Center</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#0070C0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+    <link href="css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <header class="z-depth-1-hover">
+       <div class="container">
+           <h1><img src="logo.png" alt=""/></h1>
+           <nav class="z-depth-1-hover">
+               <a href="#" class="tooltipped" data-position="bottom" data-delay="900" data-tooltip="Home"><i class="mdi mdi-home waves-effect waves-dark"></i></a>
+               <a href="#" class="tooltipped" data-position="bottom" data-delay="900" data-tooltip="Your WebCard"><i class="mdi mdi-account-card-details waves-effect waves-dark"></i></a>
+               <a href="#" class="tooltipped" data-position="bottom" data-delay="900" data-tooltip="Mail"><i class="mdi mdi-email waves-effect waves-dark"></i></a>
+               <a href="#" class="tooltipped" data-position="bottom" data-delay="900" data-tooltip="Scan"><i class="mdi mdi-qrcode-scan waves-effect waves-dark"></i></a>
+               <a href="#" class="tooltipped" data-position="bottom" data-delay="900" data-tooltip="Meet"><i class="mdi mdi-nature-people waves-effect waves-dark"></i></a>
+               <a href="#" class="tooltipped" data-position="bottom" data-delay="900" data-tooltip="Search"><i class="mdi mdi-magnify waves-effect waves-dark"></i></a>
+               <a href="#" class="tooltipped" data-position="bottom" data-delay="900" data-tooltip="Settings"><i class="mdi mdi-settings waves-effect waves-dark"></i></a>
+           </nav>
+       </div>
+    </header>
+    <main>
+        <div id="leftpanel">
+            <div id="card" class="waves-effect waves-light z-depth-1-hover">
+                <img  src="defaultcard.jpg" alt="WebCard of @default" />
+            </div>
+            <div id="tags">
+                <div class="chip mdi mdi-web z-depth-1-hover"> Public</div>
+                <div class="chip mdi mdi-copyright z-depth-1-hover"> 2016 @David</div>
+                <div class="chip mdi mdi-currency-usd z-depth-1-hover"> Ads</div>
+                <div class="chip mdi mdi-chart-line z-depth-1-hover"> Stats</div>
+                <div class="chip mdi mdi-account-switch z-depth-1-hover"> Networked</div>
+            </div>
+            <ul id="options">
+                <li><a href="#" class="dropdown-button mdi mdi-share waves-effect waves-dark" data-activates="sharedropdown"> Share</a>
+                    <ul id="sharedropdown" class="dropdown-content">
+                        <li><a href="#!" class="mdi mdi-link-variant"> Copy public link</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#!" class="mdi mdi-human-greeting"> Physical share w/ WebCard user</a></li>
+                        <li><a href="#!" class="mdi mdi-comment-account"> Digital share w/ WebCard user</a></li>
+                        <li><a href="#!" class="mdi mdi-comment-account-outline"> Digital share w/ non-WebCard user</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#!" class="mdi mdi-twitter-box"> Twitter</a></li>
+                        <li><a href="#!" class="mdi mdi-facebook-box"> Facebook</a></li>
+                        <li><a href="#!" class="mdi mdi-bullhorn"> Other...</a></li> 
+                    </ul>
+                </li>
+                <li><a href="#" class="dropdown-button mdi mdi-share waves-effect waves-dark" data-activates="testdropdown"> Test</a>
+                    <ul id="testdropdown" class="dropdown-content">
+                        <li><a href="#!">Test</a></li>
+                        <li><a href="#!">Test 2</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#!">Copy link</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="mdi mdi-pencil waves-effect waves-dark"> Edit</a></li>
+                <li><a href="#" class="mdi mdi-information-outline waves-effect waves-dark"> Option 3</a></li>
+                <li><a href="#" class="mdi mdi-information-outline waves-effect waves-dark"> Option 4</a></li>
+                <li><a href="#" class="mdi mdi-information-outline waves-effect waves-dark"> Option 5</a></li>
+            </ul>
+        </div>
+        <div id="rightpanel">
+            <div class="z-depth-1-hover">
+                
+            </div>
+        </div>
+        
+        <div class="fixed-action-btn">
+            <a class="btn-floating btn-large tooltipped" data-position="left" data-delay="0" data-tooltip="Show card details">
+                <i class="large mdi mdi-eye"></i>
+            </a>
+            <ul>
+                <li><a class="btn-floating tooltipped" data-position="left" data-delay="0" data-tooltip="Data view"><i class="mdi mdi-matrix"></i></a></li>
+                <li><a class="btn-floating tooltipped" data-position="left" data-delay="0" data-tooltip="Default view"><i class="mdi mdi-format-align-left"></i></a></li>
+                <li><a class="btn-floating tooltipped" data-position="left" data-delay="0" data-tooltip="Designed view"><i class="mdi mdi-bulletin-board"></i></a></li>
+            </ul>
+        </div>
+    </main>
+
+    <script type="text/javascript" src="http://dav.li/jquery/2.1.4.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
