@@ -59,19 +59,26 @@ html,body{
     overflow-x: hidden;
 }
 body{
+    box-sizing: border-box;
     font-family: sans-serif;
     background: #E8E8E8;
     padding-bottom: 40px;
+    border-bottom: 1vh solid #ca1714;
 }
 
 header{
+    position: fixed;
+    top:0;
+    right:0;
+    left:0;
     background: white;
+    z-index: 80;
 }
 header .container{
-    padding: 20px 0;
+    padding: 1vh 0;
 }
 header h1{
-    height: 50px!important;
+    height: 5vh!important;
     margin: 0;
     text-align: right;
     font-size: initial;
@@ -85,7 +92,8 @@ header nav{
     position: relative;
     display: inline-block;
     width: auto;
-    height: 50px;
+    height: 5vh;
+    line-height5: 5vh;
     flex-grow: 1;
     margin-left: 40px;
     vertical-align: top;
@@ -99,21 +107,21 @@ header nav:before {
     content:"";
     position: absolute;
     right: 100%;
-    top: 15px;
+    top: 1.5vh;
     width: 0;
     height: 0;
-    border-top: 10px solid transparent;
-    border-right: 15px solid #E8E8E8;
-    border-bottom: 10px solid transparent;
+    border-top: 1vh solid transparent;
+    border-right: 1.5vh solid #E8E8E8;
+    border-bottom: 1vh solid transparent;
 }
 header nav a {
     display: inline-block;
     position: relative;
-    top: -7px;
-    margin: 1px 0;
+    vertical-align: top;
     margin-left: 20px;
-    height: 48px;
-    line-height: 48px;
+    height: 5vh;
+    line-height: 5vh;
+    font-size: 2.5vh;
 }
 header nav a:last-child{
     margin-right: 10px;
@@ -123,7 +131,7 @@ header nav .mdi{
     display: inline-block;
     height: inherit;
     line-height: inherit;
-    font-size: 1.5em;  
+    font-size: inherit;  
     color: rgba(0,0,0,0.7)!important;
     border-bottom: 2px solid rgba(0,0,0,0);
     -webkit-transition: all 0.2s ease;
@@ -162,7 +170,18 @@ header nav .mdi:hover{
 }
 
 
-main,.container{
+#title{
+    margin-top: 11vh!important;
+    font-size: 2em;
+    color: #0c4873;
+}
+#title .mdi{
+    position: relative;
+    top: -5px;
+}
+
+
+main,.container, #title{
     display: flex;
     position: relative;
     flex-wrap: nowrap;
@@ -173,7 +192,7 @@ main,.container{
 
 main {
     min-height: 80vh;
-    margin-top: 40px;
+    margin-top: 1vh;
     font-size: 0;
 }
 
@@ -251,6 +270,9 @@ main {
     z-index: 15;
 }
 
+#sharedropdown{
+    top: 0px!important;
+}
 
 #rightpanel{
     position: relative;
