@@ -59,11 +59,12 @@ html,body{
     overflow-x: hidden;
 }
 body{
+    min-height: 100vh;
+    padding-bottom: 1vh;
     box-sizing: border-box;
+    border-bottom: 1vh solid #ca1714;
     font-family: sans-serif;
     background: #E8E8E8;
-    padding-bottom: 40px;
-    border-bottom: 1vh solid #ca1714;
 }
 
 header{
@@ -269,9 +270,16 @@ main {
 #options>li:nth-child(5){
     z-index: 15;
 }
-
 #sharedropdown{
     top: 0px!important;
+}
+#options .badge {
+    margin: 5px;
+    background: rgba(0,0,0,0.4);
+    transition: all .3s ease-out;
+}
+#options a:hover>.badge{
+    background: #0070c0;
 }
 
 #rightpanel{
